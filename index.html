@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-flex">
+            <div class="rectangle">
+              <div class="columns mt-5">
+                <div class="column is-3 is-inline p-0">
+                  <span class="has-text-weight-bold is-size-7">DAY</span>
+                  <input type="number" max="31" min="1" id="day-input" class="is-size-4 has-text-weight-bold" placeholder="DD" autocomplete="off">
+                </div>
+                <div class="column is-3 is-inline p-0">
+                  <span class="has-text-weight-bold is-size-7">MONTH</span>
+                  <input type="number" max="12" min="1" id="month-input" class="is-size-4 has-text-weight-bold" placeholder="MM" autocomplete="off">
+                </div>
+                <div class="column is-3 is-inline p-0">
+                  <span class="has-text-weight-bold is-size-7">YEAR</span>
+                  <input type="number" min="1900" id="year-input" class="is-size-4 has-text-weight-bold" placeholder="YYYY" autocomplete="off">
+                </div>
+              </div>
+              <hr class="is-inline-block"><div class="svg is-inline-block">
+                <img src="images/icon-arrow.svg">
+              </div>
+              <div class="result has-text-weight-bold is-italic">
+                <p class="has-text-black"><span id="years">- -</span> years</p>
+                <p class="has-text-black"><span id="months">- -</span> months</p>
+                <p class="has-text-black"><span id="days">- -</span> days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/osama806" target="_blank">osama806</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
